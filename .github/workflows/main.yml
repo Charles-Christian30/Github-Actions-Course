@@ -1,18 +1,18 @@
 # this is a basic workflow to help you to get started with Actions
 
-name : CI 
+name: CI 
 
 # Controls when the workflow will run
 
 on:
    # Triggers the workflow on push or pull request events but only for the main branch
    push : 
-   branches : [ main ]
-   pull_requests : 
-   branches : [ main ]
+   watch : [ main ]
+   pull_request : 
+   create : [ main ]
 
    # Allow you to run this workflow manually from the Actions tab
-   workfolw_dispatch:
+   workflow_dispatch:
    # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs: 
   build : 
